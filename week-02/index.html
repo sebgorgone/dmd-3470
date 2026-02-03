@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Week 2 Boilerplate Assignment</title>
+
+   <style>
+
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      header {
+         width: 100vw;
+         height: 86px;
+         justify-content: space-between;
+         align-items: center;
+         display: flex
+      }
+
+      nav {
+         display: flex;
+         gap: 8px;
+         margin: 16px;
+      }
+
+      main {
+         display: flex;
+         padding: 1em;
+         width: 100vw;
+         flex: 1
+      }
+
+      .column {
+         flex: 1;
+         flex-direction: column;
+         align-items: center;
+         display: flex;
+      }
+      #text {
+         align-items: flex-start;
+      }
+
+      body {
+         display: flex;
+         flex-direction: column;
+         height: 100vh;
+      }
+
+
+      footer {
+         width: 100vw;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 48px;
+      }
+
+
+
+   </style>
+
+</head>
+<body>
+
+   <header>
+
+      <h1
+         style="margin: 16px"
+      >Hi my name is Sebastian</h1>
+
+      <nav>
+         <a
+            href="index.html"
+         >home</a>
+         <a
+            href="lists.html"
+         >
+            list
+         </a>
+      </nav>
+
+   </header>
+   
+   <main>
+
+      <div
+         class="column"
+      >
+
+      <img 
+         alt="image of me" 
+         src="img/canopy.jpg" 
+         style="border-radius: 8px; box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px, rgba(0, 0, 0, 0.3) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 4px 8px, rgba(0, 0, 0, 0.15) 0px 8px 16px, rgba(0, 0, 0, 0.01) 0px 16px 32px; width: 60%;"
+      />
+
+      </div>
+
+      <div
+         class="column"
+         id="'text"
+      >
+
+      <p
+      >Im sebastian, Im an undergrad student at UCONN in the Digital Media and Design program. I coach freestyle skiing in vermont part time, im an 'IT Specialist' at a highschool, and I work as the manifest at a skydiving dropzone in Connecticut.</p>
+
+      <hr 
+         style="width: 100%; margin: 1em"
+      />
+
+      <p>
+         I like to ski, skydive, and play with computers- go figure.
+      </p>
+
+      </div>
+
+
+   </main>
+
+   <footer>
+
+      sebastian gorgone
+
+   </footer>
+
+</body>
+</html>

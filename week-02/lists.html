@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Week 2 Boilerplate Assignment</title>
+
+   <style>
+
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      header {
+         width: 100vw;
+         height: 86px;
+         justify-content: space-between;
+         align-items: center;
+         display: flex
+      }
+
+      nav {
+         display: flex;
+         gap: 8px;
+         margin: 16px;
+      }
+
+      main {
+         display: flex;
+         padding: 1em;
+         width: 100vw;
+         flex: 1
+      }
+
+      .column {
+         flex: 1;
+         flex-direction: column;
+         align-items: center;
+         display: flex;
+      }
+
+      body {
+         display: flex;
+         flex-direction: column;
+         height: 100vh;
+      }
+
+
+      footer {
+         width: 100vw;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 48px;
+      }
+
+
+
+   </style>
+
+</head>
+<body>
+
+   <header>
+
+      <h1
+         style="margin: 16px"
+      >My lists!</h1>
+
+      <nav>
+         <a
+            href="index.html"
+         >home</a>
+         <a
+            href="lists.html"
+         >
+            list
+         </a>
+      </nav>
+
+   </header>
+   
+   <main>
+
+      <div
+         class="column"
+      >
+
+      <h3>My interests</h3>
+
+      <ul>
+         <li>skiing</li>
+         <li>skydiving</li>
+         <li>web development / computers</li>
+      </ul>
+
+      </div>
+
+      <div
+         class="column"
+      >
+         <h3>my favorite websites</h3>
+
+         <ul>
+            <li>my portfolio | <a href="https://sebgorgone.github.io/portfolio2025/" target="_blank">portfolio</a></li>
+            <li>FiveGuys | <a href="https://order.fiveguys.com/" target="_blank">FiveGuys</a></li>
+            <li>my github | <a href="https://github.com/sebgorgone">github</a></li>
+         </ul>
+
+      </div>
+
+
+   </main>
+
+   <footer>
+
+      sebastian gorgone
+
+   </footer>
+
+</body>
+</html>
