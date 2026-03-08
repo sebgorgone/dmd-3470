@@ -49,7 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "ArrowRight") scrollToPage(currentIndex + 1);
+    if (e.key === "ArrowDown") scrollToPage(currentIndex + 1);
     if (e.key === "ArrowLeft") scrollToPage(currentIndex - 1);
+    if (e.key === "ArrowUp") scrollToPage(currentIndex - 1);
     if (e.key === " ") scrollToPage(currentIndex + 1); 
   });
 

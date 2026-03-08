@@ -119,23 +119,27 @@ button {
     }
 
     .selector {
-      color: #3399ff
+      color: #3399ff;
     }
 
     .property {
-      color: #000099
+      color: #000099;
     }
 
     .bracket {
-      color: #800080
+      color: #800080;
     }
 
     .value {
-      color: #cc5200
+      color: #713700;
     }
 
     .variable {
-      color: #4d004d
+      color: #4d004d;
+    }
+
+    .comment {
+      color: #004d62;
     }
 
     .lbr {
