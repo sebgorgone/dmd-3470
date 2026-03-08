@@ -1,0 +1,349 @@
+@font-face {
+  font-family: "main";
+  src: url("../media/mvf.ttf");
+}
+@font-face {
+  font-family: "body";
+  src: url("../media/nerdfont.ttf");
+}
+body {
+  background-color: #333333;
+}
+
+body {
+  background-color: #333333;
+  overflow: hidden;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  display: flex;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+@media (min-width: 700px) {
+  .hero {
+    gap: 8px;
+  }
+}
+@media (min-width: 1400px) {
+  .hero {
+    gap: 16px;
+  }
+}
+.hero {
+  width: 100%;
+  height: 40vh;
+}
+
+#sass-logo {
+  width: 200px;
+}
+@media (min-width: 700px) {
+  #sass-logo {
+    width: 300px;
+  }
+}
+@media (min-width: 1400px) {
+  #sass-logo {
+    width: 400px;
+  }
+}
+
+.title {
+  display: flex;
+  font-family: main;
+  color: #ffffff;
+  font-size: 50px;
+}
+@media (min-width: 700px) {
+  .title {
+    font-size: 80px;
+  }
+}
+@media (min-width: 1400px) {
+  .title {
+    font-size: 100px;
+  }
+}
+.title {
+  font-weight: bold;
+  text-shadow: 0 0 2px white, 0 0 5px #cccccc, 0 0 10px #999999, 0 0 20px #666666;
+}
+
+.subHeader {
+  display: flex;
+  font-family: body;
+  color: #808080;
+  font-size: 25px;
+}
+@media (min-width: 700px) {
+  .subHeader {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1400px) {
+  .subHeader {
+    font-size: 70px;
+  }
+}
+.subHeader {
+  font-weight: bold;
+  text-shadow: 0 0 2px #808080, 0 0 5px #4d4d4d, 0 0 10px #1a1a1a, 0 0 20px black;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 60vh;
+}
+
+.codeBlock .navBarDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+@media (min-width: 700px) {
+  .codeBlock .navBarDiv {
+    padding: 8px;
+  }
+}
+@media (min-width: 1400px) {
+  .codeBlock .navBarDiv {
+    padding: 16px;
+  }
+}
+.codeBlock .navBarDiv {
+  align-items: center;
+  background-color: #000000;
+  border-radius: 8px 8px 0 0;
+}
+.codeBlock .navBarDiv .navButtonsDiv {
+  gap: 6px;
+}
+.codeBlock .navBarDiv .navButtonsDiv .redButtonDiv {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+@media (min-width: 700px) {
+  .codeBlock .navBarDiv .navButtonsDiv .redButtonDiv {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+  }
+}
+@media (min-width: 1400px) {
+  .codeBlock .navBarDiv .navButtonsDiv .redButtonDiv {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+  }
+}
+.codeBlock .navBarDiv .navButtonsDiv .redButtonDiv {
+  background-color: red;
+}
+.codeBlock .navBarDiv .navButtonsDiv .yellowButtonDiv {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+@media (min-width: 700px) {
+  .codeBlock .navBarDiv .navButtonsDiv .yellowButtonDiv {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+  }
+}
+@media (min-width: 1400px) {
+  .codeBlock .navBarDiv .navButtonsDiv .yellowButtonDiv {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+  }
+}
+.codeBlock .navBarDiv .navButtonsDiv .yellowButtonDiv {
+  background-color: yellow;
+}
+.codeBlock .navBarDiv .navButtonsDiv .greenButtonDiv {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+@media (min-width: 700px) {
+  .codeBlock .navBarDiv .navButtonsDiv .greenButtonDiv {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+  }
+}
+@media (min-width: 1400px) {
+  .codeBlock .navBarDiv .navButtonsDiv .greenButtonDiv {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+  }
+}
+.codeBlock .navBarDiv .navButtonsDiv .greenButtonDiv {
+  background-color: green;
+}
+.codeBlock .navBarDiv .fileExt {
+  font-family: body;
+  color: #808080;
+}
+.codeBlock .codeBlockBody {
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  background-color: #666666;
+  border-radius: 0 0 8px 8px;
+  padding: 4px;
+}
+@media (min-width: 700px) {
+  .codeBlock .codeBlockBody {
+    padding: 8px;
+  }
+}
+@media (min-width: 1400px) {
+  .codeBlock .codeBlockBody {
+    padding: 16px;
+  }
+}
+.codeBlock .codeBlockBody {
+  gap: 6px;
+}
+.codeBlock .codeBlockBody p {
+  font-family: body;
+  font-size: 12px;
+}
+@media (min-width: 700px) {
+  .codeBlock .codeBlockBody p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1400px) {
+  .codeBlock .codeBlockBody p {
+    font-size: 24px;
+  }
+}
+.codeBlock .codeBlockBody .tab1 {
+  padding-left: 16px;
+}
+@media (min-width: 700px) {
+  .codeBlock .codeBlockBody .tab1 {
+    padding-left: 19.2px;
+  }
+}
+@media (min-width: 1400px) {
+  .codeBlock .codeBlockBody .tab1 {
+    padding-left: 25.6px;
+  }
+}
+.codeBlock .codeBlockBody .tab2 {
+  padding-left: 32px;
+}
+@media (min-width: 700px) {
+  .codeBlock .codeBlockBody .tab2 {
+    padding-left: 38.4px;
+  }
+}
+@media (min-width: 1400px) {
+  .codeBlock .codeBlockBody .tab2 {
+    padding-left: 51.2px;
+  }
+}
+.codeBlock .codeBlockBody .tab3 {
+  padding-left: 48px;
+}
+@media (min-width: 700px) {
+  .codeBlock .codeBlockBody .tab3 {
+    padding-left: 57.6px;
+  }
+}
+@media (min-width: 1400px) {
+  .codeBlock .codeBlockBody .tab3 {
+    padding-left: 76.8px;
+  }
+}
+.codeBlock .codeBlockBody .tab4 {
+  padding-left: 64px;
+}
+@media (min-width: 700px) {
+  .codeBlock .codeBlockBody .tab4 {
+    padding-left: 76.8px;
+  }
+}
+@media (min-width: 1400px) {
+  .codeBlock .codeBlockBody .tab4 {
+    padding-left: 102.4px;
+  }
+}
+.codeBlock .codeBlockBody .tab5 {
+  padding-left: 80px;
+}
+@media (min-width: 700px) {
+  .codeBlock .codeBlockBody .tab5 {
+    padding-left: 96px;
+  }
+}
+@media (min-width: 1400px) {
+  .codeBlock .codeBlockBody .tab5 {
+    padding-left: 128px;
+  }
+}
+.codeBlock .codeBlockBody .selector {
+  color: #3399ff;
+}
+.codeBlock .codeBlockBody .property {
+  color: #000099;
+}
+.codeBlock .codeBlockBody .bracket {
+  color: #800080;
+}
+.codeBlock .codeBlockBody .value {
+  color: #cc5200;
+}
+.codeBlock .codeBlockBody .variable {
+  color: #4d004d;
+}
+.codeBlock {
+  width: 80%;
+}
+@media (min-width: 700px) {
+  .codeBlock {
+    width: 650px;
+  }
+}
+@media (min-width: 1400px) {
+  .codeBlock {
+    width: 1000px;
+  }
+}
+.codeBlock {
+  height: 90%;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=main.css.map */
