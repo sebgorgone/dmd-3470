@@ -1,10 +1,10 @@
 @font-face {
   font-family: "main";
-  src: url("../media/mvf.ttf");
+  src: url("media/mvf.ttf");
 }
 @font-face {
   font-family: "body";
-  src: url("../media/nerdfont.ttf");
+  src: url("media/nerdfont.ttf");
 }
 body {
   background-color: #333333;
