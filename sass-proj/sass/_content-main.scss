@@ -97,16 +97,40 @@
 }
 
 h3{
-   .h3-text {
-      color: $text-main-color;
-      font-family: $font-main;
-      @include get-h3-font-size;
-      @include gradient-text-shadow($text-main-color);
-   }
+
+   color: $text-main-color;
+   font-family: $font-main;
+   @include get-h3-font-size;
+   @include gradient-text-shadow($text-main-color);
+
 }
 
 @mixin get-half-height ($numerator) {
    height:(100vh * ($numerator / 12));
+}
+
+@mixin get-section-a-gap {
+   gap: 4px;
+
+   @media (min-width: 700px) {
+      gap: 6px;
+   }
+
+   @media (min-width: 1080px) {
+      gap: 8px;
+   }
+
+   @media (min-width: 1400px) {
+      gap: 10px;
+   }
+
+   @media (min-width: 1800px) {
+      gap: 12px;
+   }
+
+   @media (min-width: 2200px) {
+      gap: 14px;
+   }
 }
 
 .section-a-1 {

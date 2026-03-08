@@ -1,173 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SASS Showcase</title>
-    <link rel='stylesheet' href='main.css'>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SASS Showcase</title>
+  <link rel='stylesheet' href='main.css'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- home page start -->
+</head>
 
-    <header class='hero page'>
-      <img 
-        src='media/sass-pink.svg' 
-        id='sass-logo' 
-        alt='sass-logo' 
+<body>
 
-        data-aos='zoom-in' 
-        data-aos-duration='500'
-        data-aos-easing='ease-in-sine'
-      >
-      <h1 
-        class='title'
-        data-aos='zoom-in'
-        data-aos-easing='ease-in-sine'
-        data-aos-delay='450'
-        data-aos-duration='500'
-      >
-        SHOWCASE 
-      </h1>
-    </header>
+  <!-- home page start -->
+
+  <header class='hero page'>
+    <img src='media/sass-pink.svg' id='sass-logo' alt='sass-logo' data-aos='zoom-in' data-aos-duration='500'
+      data-aos-easing='ease-in-sine'>
+    <h1 class='title' data-aos='zoom-in' data-aos-easing='ease-in-sine' data-aos-delay='450' data-aos-duration='500'>
+      SHOWCASE
+    </h1>
+  </header>
 
 
-    <section
-      class='body'
+  <section class='body' data-aos='zoom-in' data-aos-easing='ease-in-sine' data-aos-delay='450' data-aos-duration='500'>
 
-      data-aos='zoom-in'
-      data-aos-easing='ease-in-sine'
-      data-aos-delay='450'
-      data-aos-duration='500'
-    >
+    <div class='codeBlock'>
 
-      <div class='codeBlock'>
+      <div class="navBarDiv">
+        <div class="navButtonsDiv">
 
-        <div class="navBarDiv">
-          <div class="navButtonsDiv">
-
-            <div class="redButtonDiv">
-
-            </div>
-            <div class="yellowButtonDiv">
-
-            </div>
-            <div class="greenButtonDiv">
-
-            </div>
+          <div class="redButtonDiv">
 
           </div>
-          <p class='fileExt'>.scss</p>
+          <div class="yellowButtonDiv">
+
+          </div>
+          <div class="greenButtonDiv">
+
+          </div>
+
         </div>
+        <p class='fileExt'>.scss</p>
+      </div>
 
-        <div class="codeBlockBody">
+      <div class="codeBlockBody">
+
+        <p>
+
+          <span class="variable">
+            $awesome:
+          </span>
+
+          <span class="value">
+            50px
+          </span>;
+
+        </p>
+
+        <p>
+
+          <span class="variable">
+            $style:
+          </span>
+
+          <span class="value">
+            50px
+          </span>;
+
+        </p>
+
+        <p>
+
+          <span class="variable">
+            $sheets:
+          </span>
+
+          <span class="value">
+            #0000ff
+          </span>;
+
+        </p>
 
 
-          <p>
 
-            <span class='selector'>.Syntactically </span>
-            <span class='bracket'>{</span>
+        <p class="lbr"></p>
 
-          </p>
+        <p>
 
-          <p class='tab1'>
+          <span class='selector'>.Syntactically </span>
+          <span class='bracket'>{</span>
 
-            <span class='property'>width: </span>
-            <span class='variable'>$awesome</span>;
+        </p>
 
-          </p>
-          <p class='tab1'>
+        <p class='tab1'>
 
-            <span class='property'>height: </span>
-            <span class='variable'>$style</span>;
+          <span class='property'>width: </span>
+          <span class='variable'>$awesome</span>;
 
-          </p>
+        </p>
+        <p class='tab1'>
 
-          <p class='tab1'>
+          <span class='property'>height: </span>
+          <span class='variable'>$style</span>;
 
-            <span class='property'>color: </span>
-            <span class='variable'>$sheets</span>;
+        </p>
 
-          </p>
+        <p class='tab1'>
 
-          <p>
-            <span class='bracket'>}</span>
-          </p>
+          <span class='property'>color: </span>
+          <span class='variable'>$sheets</span>;
+
+        </p>
+
+        <p>
+          <span class='bracket'>}</span>
+        </p>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- home page end -->
+
+
+  <!-- intro page start -->
+
+  <div class="flex-center section-a-3 page flex-col">
+
+    <h3>The SASS Syntax</h3>
+
+    <p class="subHeader">.sass .scss</p>
+
+  </div>
+
+  <div class="flex-col section-b-9">
+
+    <div class="row md">
+
+      <div class="col-6 md flex-center">
+
+        <div class='codeBlock'>
+
+          <div class="navBarDiv">
+            <div class="navButtonsDiv">
+
+              <div class="redButtonDiv">
+
+              </div>
+              <div class="yellowButtonDiv">
+
+              </div>
+              <div class="greenButtonDiv">
+
+              </div>
+
+            </div>
+            <p class='fileExt'>.sass</p>
+          </div>
+
+          <div class="codeBlockBody">
+
+            <p>
+              <span class='variable'>@use</span> <span class='variable'>"sass:list"</span>
+            </p>
+
+            <p>
+              <span class='variable'>@use</span> <span class='variable'>"sass:color"</span>
+            </p>
+
+            <p></p>
+
+            <p>
+              <span class='variable'>$font-stack</span>: Helvetica, Arial
+            </p>
+
+            <p>
+              <span class='variable'>$primary-color</span>: #333
+            </p>
+
+            <p></p>
+
+            <p>
+              <span class='selector'>body</span>
+            </p>
+
+            <p class='tab1'>
+              <span class='variable'>$font-stack</span>: <span class='variable'>list.append</span>(<span class='variable'>$font-stack</span>, sans-serif)
+            </p>
+
+            <p class='tab1'>
+              <span class='property'>font</span>: <span class='variable'>$font-stack</span>
+            </p>
+
+            <p></p>
+
+            <p>
+              <span class='selector'>a</span>
+            </p>
+
+            <p class='tab1'>
+              <span class='property'>color</span>: <span class='variable'>$primary-color</span>
+            </p>
+
+            <p></p>
+
+            <p class='tab1'>
+              <span class='selector'>&:hover</span>
+            </p>
+
+            <p class='tab2'>
+              <span class='property'>color</span>: <span class='variable'>color.scale</span>(<span class='variable'>$primary-color</span>, <span class='variable'>$lightness</span>: 20%)
+            </p>
+
+          </div>
 
         </div>
 
       </div>
 
+      <div class="col-6 md flex-center">
 
-    </section>
+        <div class='codeBlock'>
 
-    <!-- home page end -->
+          <div class="navBarDiv">
+            <div class="navButtonsDiv">
 
+              <div class="redButtonDiv">
 
-    <!-- intro page start -->
+              </div>
+              <div class="yellowButtonDiv">
 
-    <div
-      class="flex section-a-3 page"
-    >
+              </div>
+              <div class="greenButtonDiv">
+
+              </div>
+
+            </div>
+            <p class='fileExt'>.scss</p>
+          </div>
+
+          <div class="codeBlockBody">
+
+            <p>
+              <span class='variable'>@use</span> <span class='variable'>"sass:list"</span>;
+            </p>
+
+            <p>
+              <span class='variable'>@use</span> <span class='variable'>"sass:color"</span>;
+            </p>
+
+            <p></p>
+
+            <p>
+              <span class='variable'>$font-stack</span>: Helvetica, Arial;
+            </p>
+
+            <p>
+              <span class='variable'>$primary-color</span>: #333;
+            </p>
+
+            <p></p>
+
+            <p>
+              <span class='selector'>body</span> <span class='bracket'>{</span>
+            </p>
+
+            <p class='tab1'>
+              <span class='variable'>$font-stack</span>: <span class='variable'>list.append</span>(<span class='variable'>$font-stack</span>, sans-serif);
+            </p>
+
+            <p class='tab1'>
+              <span class='property'>font</span>: <span class='variable'>$font-stack</span>;
+            </p>
+
+            <p>
+              <span class='bracket'>}</span>
+            </p>
+
+            <p></p>
+
+            <p>
+              <span class='selector'>a</span> <span class='bracket'>{</span>
+            </p>
+
+            <p class='tab1'>
+              <span class='property'>color</span>: <span class='variable'>$primary-color</span>;
+            </p>
+
+            <p></p>
+
+            <p class='tab1'>
+              <span class='selector'>&:hover </span><span class='bracket'>{</span>
+            </p>
+
+            <p class='tab1'>
+              <span class='property'>color</span>: <span class='variable'>color.scale</span>(<span class='variable'>$primary-color</span>, <span class='variable'>$lightness</span>: <span class="variable">20%</span>);
+            </p>
+
+            <p class='tab1'>
+              <span class='bracket'>}</span>
+            </p>
+
+            <p>
+              <span class='bracket'>}</span>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
-    <div 
-      class="flex section-b-9"
-      
-    >
+    <div class="row md">
 
-    <div class="row" style="background-color: red;"></div>
+      <div class="col-5 md flex-center">
 
+        <div class='codeBlock'>
+
+          <div class="navBarDiv">
+            <div class="navButtonsDiv">
+
+              <div class="redButtonDiv">
+
+              </div>
+              <div class="yellowButtonDiv">
+
+              </div>
+              <div class="greenButtonDiv">
+
+              </div>
+
+            </div>
+            <p class='fileExt'>.css</p>
+          </div>
+
+          <div class="codeBlockBody">
+
+            <p>
+              <span class='selector'>body</span> <span class='bracket'>{</span>
+            </p>
+
+            <p class='tab1'>
+              <span class='property'>font</span>: Helvetica, Arial, sans-serif;
+            </p>
+
+            <p>
+              <span class='bracket'>}</span>
+            </p>
+
+            <p></p>
+
+            <p>
+              <span class='selector'>a</span> <span class='bracket'>{</span>
+            </p>
+
+            <p class='tab1'>
+              <span class='property'>color</span>: #333;
+            </p>
+
+            <p>
+              <span class='bracket'>}</span>
+            </p>
+
+            <p></p>
+
+            <p>
+              <span class='selector'>a:hover</span> <span class='bracket'>{</span>
+            </p>
+
+            <p class='tab1'>
+              <span class='property'>color</span>: <span class='bracket'>rgb</span>(91.8, 91.8, 91.8);
+            </p>
+
+            <p>
+              <span class='bracket'>}</span>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-7 md ">
+
+        <p class="body-text">Sass contains two different syntaxes where the defining difference between the two is the use of curly braces vs the use of indentation to denote code structure</p>
+        <br>
+        <p class="body-text">The .sass syntax exists as a mode of backwards compatability as it was the orginal language for the sass compiler</p>
+        <br>
+        <p class="body-text">It is less common as the .scss syntax allows any valid css code to be compiled as well as sass code</p>
+      </div>
 
     </div>
 
-    <!-- intro page end -->
+  </div>
+
+  <!-- intro page end -->
 
 
-    <!-- structure page end -->
-    <!-- structure page end -->
+  <!-- compiler page end -->
+  <!-- compiler page end -->
+
+  <!-- structure page start -->
+  <!-- strcuture page end -->
+
+  <!-- variable page start -->
+  <!-- variable page end -->
+
+  <!-- mixins page start -->
+  <!-- mixins page end -->
+
+  <!-- operators page start -->
+  <!-- operators page end -->
 
 
-    <!-- variable page start -->
-    <!-- variable page end -->
 
 
-    <header 
-      style='height: 100vh'
-      class='hero page' >
-      <img 
-        src='media/sass-pink.svg' 
-        id='sass-logo' 
-        alt='sass-logo' 
 
-        data-aos='zoom-in' 
-        data-aos-duration='500'
-        data-aos-easing='ease-in-sine'
-      >
-      <h1 
-        class='title'
-        data-aos='zoom-in'
-        data-aos-easing='ease-in-sine'
-        data-aos-delay='450'
-        data-aos-duration='500'
-      >
-        SHOWCASE 
-      </h1>
 
-      <h2
-        class='subHeader'
-      >
-        thank you
-      </h2>
-    </header>
+  <header style='height: 100vh' class='hero page'>
+    <img src='media/sass-pink.svg' id='sass-logo' alt='sass-logo' data-aos='zoom-in' data-aos-duration='500'
+      data-aos-easing='ease-in-sine'>
+    <h1 class='title' data-aos='zoom-in' data-aos-easing='ease-in-sine' data-aos-delay='450' data-aos-duration='500'>
+      SHOWCASE
+    </h1>
 
-    <script src='script.js'></script>
-    <script>
+    <h2 class='subHeader'>
+      thank you
+    </h2>
+  </header>
+
+  <script src='script.js'></script>
+  <script>
     AOS.init();
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>

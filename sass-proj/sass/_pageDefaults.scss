@@ -47,6 +47,7 @@ button {
 
 .codeBlock {
   display: flex;
+
   .navBarDiv {
     width: 100%;
     display: flex;
@@ -59,14 +60,17 @@ button {
     .navButtonsDiv {
       gap: 6px;
       display: flex;
+
       .redButtonDiv {
         @include code-button-sizing;
         background-color: red;
       }
+
       .yellowButtonDiv {
         @include code-button-sizing;
         background-color: yellow;
       }
+
       .greenButtonDiv {
         @include code-button-sizing;
         background-color: green;
@@ -86,7 +90,8 @@ button {
     background-color: $code-block-background-color;
     border-radius: 0 0 8px 8px;
     @include code-block-navbar-padding;
-    gap:6px;
+    gap: 6px;
+    overflow: auto;
 
     p {
       font-family: $font-body;
@@ -96,15 +101,19 @@ button {
     .tab1 {
       @include get-indent-margin(1);
     }
+
     .tab2 {
       @include get-indent-margin(2);
     }
+
     .tab3 {
       @include get-indent-margin(3);
     }
+
     .tab4 {
       @include get-indent-margin(4);
     }
+
     .tab5 {
       @include get-indent-margin(5);
     }
@@ -128,6 +137,18 @@ button {
     .variable {
       color: #4d004d
     }
+
+    .lbr {
+      height: 12px;
+
+      @media (min-width: 700px) {
+        height: 18px;
+      }
+
+      @media (min-width: 1400px) {
+        height: 24px;
+      }
+    }
   }
 
   height: 90%;
@@ -138,4 +159,3 @@ button {
 
 
 }
-
