@@ -86,6 +86,18 @@
   }
 }
 
+@mixin code-block-width-halfed {
+    width: 80%;
+
+  @media (min-width: 700px) {
+    width: (650px / 2);
+  }
+
+  @media (min-width: 1400px) {
+    width: (1000px / 2); 
+  }
+}
+
 @mixin code-button-sizing {
   $bs1: 8px;
   $bs2: 12px;

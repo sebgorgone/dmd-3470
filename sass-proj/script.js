@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const pages = Array.from(document.querySelectorAll(".hero"));
+  const pages = Array.from(document.querySelectorAll(".page"));
   let currentIndex = 0;
   let isScrolling = false;
+
+  console.log(pages);
 
   function easeInOutCubic(t) {
     return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;

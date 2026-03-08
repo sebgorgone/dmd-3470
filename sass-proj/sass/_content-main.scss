@@ -1,0 +1,207 @@
+@use "global" as *;
+
+@mixin get-body-font {
+   font-size: 12px;
+   @media (min-width: 700px) {
+      font-size: 14px;
+   }
+
+   @media (min-width: 1080px) {
+      font-size: 16px;
+   }
+
+   @media (min-width: 1400px) {
+      font-size: 16.75px;
+   }
+
+   @media (min-width: 1800px) {
+      font-size: 17.5px;
+   }
+
+   @media (min-width: 2200px) {
+      font-size: 18.25px;
+   }
+
+   @media (min-width: 2600px) {
+      font-size: 19px;
+   }
+
+   @media (min-width: 3000px) {
+      font-size: 19.75px;
+   }
+
+   @media (min-width: 3400px) {
+      font-size: 20.5px;
+   }
+
+   @media (min-width: 3800px) {
+      font-size: 21.25px;
+   }
+
+   @media (min-width: 4000px) {
+      font-size: 22px;
+   }
+   
+}
+
+@mixin get-h3-font-size {
+   font-size: 20px;
+   @media (min-width: 700px) {
+      font-size: 30px;
+   }
+
+   @media (min-width: 1080px) {
+      font-size: 40px;
+   }
+
+   @media (min-width: 1400px) {
+      font-size: 50px;
+   }
+
+   @media (min-width: 1800px) {
+      font-size: 60px;
+   }
+
+   @media (min-width: 2200px) {
+      font-size: 70px;
+   }
+
+   @media (min-width: 2600px) {
+      font-size: 80px;
+   }
+
+   @media (min-width: 3000px) {
+      font-size: 90px;
+   }
+
+   @media (min-width: 3400px) {
+      font-size: 100px;
+   }
+
+   @media (min-width: 3800px) {
+      font-size: 110px;
+   }
+
+   @media (min-width: 4000px) {
+      font-size: 120px;
+   }
+   
+}  
+
+.body-text {
+   color: $text-sub-color;
+   font-family: $font-body;
+   @include get-body-font;
+   @include gradient-text-shadow($text-sub-color);
+
+}
+
+h3{
+   .h3-text {
+      color: $text-main-color;
+      font-family: $font-main;
+      @include get-h3-font-size;
+      @include gradient-text-shadow($text-main-color);
+   }
+}
+
+@mixin get-half-height ($numerator) {
+   height:(100vh * ($numerator / 12));
+}
+
+.section-a-1 {
+   @include get-half-height(1);
+}
+
+.section-a-2 {
+   @include get-half-height(2);
+}
+
+.section-a-3 {
+   @include get-half-height(3);
+}
+
+.section-a-4 {
+   @include get-half-height(4);
+}
+
+.section-a-5 {
+   @include get-half-height(5);
+}
+
+.section-a-6 {
+   @include get-half-height(6);
+}
+
+.section-a-7 {
+   @include get-half-height(7);
+}
+
+.section-a-8 {
+   @include get-half-height(8);
+}
+
+.section-a-9 {
+   @include get-half-height(9);
+}
+
+.section-a-10 {
+   @include get-half-height(10);
+}
+
+.section-a-11 {
+   @include get-half-height(11);
+}
+
+.section-a-12 {
+   @include get-half-height(12);
+} 
+
+.section-b-1 {
+   @include get-half-height(1);
+}
+
+.section-b-2 {
+   @include get-half-height(2);
+}
+
+.section-b-3 {
+   @include get-half-height(3);
+}
+
+.section-b-4 {
+   @include get-half-height(4);
+}
+
+.section-b-5 {
+   @include get-half-height(5);
+}
+
+.section-b-6 {
+   @include get-half-height(6);
+}
+
+.section-b-7 {
+   @include get-half-height(7);
+}
+
+.section-b-8 {
+   @include get-half-height(8);
+}
+
+.section-b-9 {
+   @include get-half-height(9);
+}
+
+.section-b-10 {
+   @include get-half-height(10);
+}
+
+.section-b-11 {
+   @include get-half-height(11);
+}
+
+.section-b-12 {
+   @include get-half-height(12);
+}
+
