@@ -16,7 +16,7 @@
   <!-- home page start -->
 
   <header class='hero page'>
-    <img src='media/sass-pink.svg' id='sass-logo' alt='sass-logo' data-aos='zoom-in' data-aos-duration='500'
+    <img src='media/sass-pink.svg' class='sass-logo' alt='sass-logo' data-aos='zoom-in' data-aos-duration='500'
       data-aos-easing='ease-in-sine'>
     <h1 class='title' data-aos='zoom-in' data-aos-easing='ease-in-sine' data-aos-delay='450' data-aos-duration='500'>
       SHOWCASE
@@ -25,102 +25,113 @@
 
 
   <section class='body' data-aos='zoom-in' data-aos-easing='ease-in-sine' data-aos-delay='450' data-aos-duration='500'>
+    <div class="row md">
 
-    <div class='codeBlock'>
+      <div class="col-4"></div>
+      <div class="col-4">
 
-      <div class="navBarDiv">
-        <div class="navButtonsDiv">
+        <div class='codeBlock'>
 
-          <div class="redButtonDiv">
+          <div class="navBarDiv">
+            <div class="navButtonsDiv">
 
+              <div class="redButtonDiv">
+
+              </div>
+              <div class="yellowButtonDiv">
+
+              </div>
+              <div class="greenButtonDiv">
+
+              </div>
+
+            </div>
+            <p class='fileExt'>.scss</p>
           </div>
-          <div class="yellowButtonDiv">
 
-          </div>
-          <div class="greenButtonDiv">
+          <div class="codeBlockBody">
+
+            <p>
+
+              <span class="variable">
+                $awesome:
+              </span>
+
+              <span class="value">
+                50px
+              </span>;
+
+            </p>
+
+            <p>
+
+              <span class="variable">
+                $style:
+              </span>
+
+              <span class="value">
+                50px
+              </span>;
+
+            </p>
+
+            <p>
+
+              <span class="variable">
+                $sheets:
+              </span>
+
+              <span class="value">
+                #0000ff
+              </span>;
+
+            </p>
+
+
+
+            <p class="lbr"></p>
+
+            <p>
+
+              <span class='selector'>.Syntactically </span>
+              <span class='bracket'>{</span>
+
+            </p>
+
+            <p class='tab1'>
+
+              <span class='property'>width: </span>
+              <span class='variable'>$awesome</span>;
+
+            </p>
+            <p class='tab1'>
+
+              <span class='property'>height: </span>
+              <span class='variable'>$style</span>;
+
+            </p>
+
+            <p class='tab1'>
+
+              <span class='property'>color: </span>
+              <span class='variable'>$sheets</span>;
+
+            </p>
+
+            <p>
+              <span class='bracket'>}</span>
+            </p>
 
           </div>
 
         </div>
-        <p class='fileExt'>.scss</p>
-      </div>
-
-      <div class="codeBlockBody">
-
-        <p>
-
-          <span class="variable">
-            $awesome:
-          </span>
-
-          <span class="value">
-            50px
-          </span>;
-
-        </p>
-
-        <p>
-
-          <span class="variable">
-            $style:
-          </span>
-
-          <span class="value">
-            50px
-          </span>;
-
-        </p>
-
-        <p>
-
-          <span class="variable">
-            $sheets:
-          </span>
-
-          <span class="value">
-            #0000ff
-          </span>;
-
-        </p>
-
-
-
-        <p class="lbr"></p>
-
-        <p>
-
-          <span class='selector'>.Syntactically </span>
-          <span class='bracket'>{</span>
-
-        </p>
-
-        <p class='tab1'>
-
-          <span class='property'>width: </span>
-          <span class='variable'>$awesome</span>;
-
-        </p>
-        <p class='tab1'>
-
-          <span class='property'>height: </span>
-          <span class='variable'>$style</span>;
-
-        </p>
-
-        <p class='tab1'>
-
-          <span class='property'>color: </span>
-          <span class='variable'>$sheets</span>;
-
-        </p>
-
-        <p>
-          <span class='bracket'>}</span>
-        </p>
 
       </div>
+      <div class="col-4"></div>
+
 
     </div>
+
 
 
   </section>
@@ -407,7 +418,8 @@
         <p class="body-text">Sass contains two different syntaxes where the defining difference between the two is the
           use of curly braces vs the use of indentation to denote code structure</p>
         <br>
-        <p class="body-text">The .sass syntax exists as a mode of backwards compatability as it was the orginal language
+        <p class="body-text">The .sass syntax exists as a mode of backwards compatibility as it was the original
+          language
           for the sass compiler</p>
         <br>
         <p class="body-text">It is less common as the .scss syntax allows any valid css code to be compiled as well as
@@ -423,49 +435,30 @@
 
   <!-- compiler page start -->
   <div class="flex-center section-a-2 page flex-col flex-center">
-    <h3
-      data-aos="zoom-in"
-      data-aos-easing="ease-in-sine"
-      data-aos-duration="500"  
-    >
-    SASS Compiler
+    <h3 data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="500">
+      SASS Compiler
     </h3>
-    <p 
-      class="subHeader"
-      data-aos="zoom-in"
-      data-aos-delay="300"
-      data-aos-duration="500"
-      data-aos-easing="ease-in-sine"
-    >.scss => .css</p>
+    <p class="subHeader" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-sine">
+      .scss => .css</p>
   </div>
 
   <div class="section-b-10 flex-col">
 
     <div class="row md">
 
-      <div 
-        class="col-8 md"
-        data-aos="fade-right"
-        data-aos-delay="600"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-8 md" data-aos="fade-right" data-aos-delay="600" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
         <p class="body-text">The sass preprocessor can be installed as a binary onto virtually any machine via the
-          github or through a number of package managers such as npm, brew, pacman, etc..</p>
+          GitHub or through a number of package managers such as npm, brew, pacman, etc..</p>
         <br>
         <p class="body-text">The binary can be called to do a number of things most commonly to watch a .sass or .scss
           and output the compiled css into a specified file</p>
         <br>
-        <p class="body-text">Alternatively this action can be handled by a vscode extension</p>
+        <p class="body-text">Alternatively this action can be handled by a VS Code extension</p>
       </div>
 
-      <div 
-        class="col-4 md flex-center"
-        data-aos="fade-left"
-        data-aos-delay="600"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-4 md flex-center" data-aos="fade-left" data-aos-delay="600" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
 
         <div class='codeBlock'>
 
@@ -503,13 +496,8 @@
 
     <div class="row md">
 
-      <div 
-        class="col-4 md flex-center"
-        data-aos="fade-right"
-        data-aos-delay="600"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-4 md flex-center" data-aos="fade-right" data-aos-delay="600" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
 
         <div class='codeBlock'>
 
@@ -543,13 +531,8 @@
         </div>
 
       </div>
-      <div 
-        class="col-4 md flex-center"
-        data-aos="zoom-in"
-        data-aos-delay="600"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-4 md flex-center" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
 
         <div class='codeBlock'>
 
@@ -572,7 +555,7 @@
 
           <div class="codeBlockBody">
 
-            <p class="comment"># begin foreground preocess to</p>
+            <p class="comment"># begin foreground process to</p>
             <p class="comment"># compile a sass file to</p>
             <p class="comment"># an output css file when</p>
             <p class="comment"># changes are made</p>
@@ -585,13 +568,8 @@
         </div>
 
       </div>
-      <div 
-        class="col-4 md flex-center"
-        data-aos="fade-left"
-        data-aos-delay="600"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-4 md flex-center" data-aos="fade-left" data-aos-delay="600" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
 
         <div class='codeBlock'>
 
@@ -635,15 +613,12 @@
 
     <div class="row md">
 
-      <div 
-        class="col-12 md flex-center flex-col"
-        data-aos="fade-up"
-        data-aos-delay="600"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
-        <p class="body-text">The sass errors and debug statements etc will get printed to the terminal after each compile </p>
-        <p class="body-text">Errors will also populate within your html if the sass code that you right cannot be compiled </p>
+      <div class="col-12 md flex-center flex-col" data-aos="fade-up" data-aos-delay="600" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
+        <p class="body-text">The sass errors and debug statements etc will get printed to the terminal after each
+          compile </p>
+        <p class="body-text">Errors will also populate within your html if the sass code that you write cannot be
+          compiled </p>
       </div>
 
     </div>
@@ -652,28 +627,19 @@
   <!-- compiler page end -->
 
   <!-- structure page start -->
-   <div class="section-a-2 flex-center page">
-    <h3
-      data-aos="zoom-in"
-      data-aos-duration="500"
-      data-aos-easing="ease-in-sine"  
-    >
-    Code Structure
+  <div class="section-a-2 flex-center page">
+    <h3 data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+      Code Structure
     </h3>
-   </div>
+  </div>
 
 
-   <div class="section-b-10 flex-col">
+  <div class="section-b-10 flex-col">
 
     <div class="row md">
 
-      <div 
-        class="col-8 md flex-center flex-col"
-        data-aos="fade-right"
-        data-aos-delay="300"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-8 md flex-center flex-col" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
 
         <p class="body-text">
           It is common practice to watch a single scss file and output that to a single master css file
@@ -682,7 +648,8 @@
         <br>
 
         <p class="body-text">
-          This is usually done by using the '@use' builtin in at-function that acts as a modular import similar to es modules
+          This is usually done by using the '@use' builtin in at-function that acts as a modular import similar to es
+          modules
         </p>
 
         <br>
@@ -699,13 +666,8 @@
 
       </div>
 
-      <div 
-        class="col-4 md flex-center"
-        data-aos="fade-left"
-        data-aos-delay="300"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-4 md flex-center" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
         <div class='codeBlock'>
 
           <div class="navBarDiv">
@@ -755,13 +717,8 @@
 
     <div class="row md">
 
-      <div 
-        class="col-4 md flex-center"
-        data-aos="fade-right"
-        data-aos-delay="300"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-4 md flex-center" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
         <div class='codeBlock'>
 
           <div class="navBarDiv">
@@ -778,7 +735,7 @@
               </div>
 
             </div>
-            <p class='fileExt'>_varaibles.scss</p>
+            <p class='fileExt'>variables.scss</p>
           </div>
 
           <div class="codeBlockBody">
@@ -791,13 +748,8 @@
 
         </div>
       </div>
-      <div 
-        class="col-4 md flex-center"
-        data-aos="zoom-in"
-        data-aos-delay="300"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-4 md flex-center" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
         <div class='codeBlock'>
 
           <div class="navBarDiv">
@@ -819,7 +771,8 @@
 
           <div class="codeBlockBody">
 
-            <p><span class="variable">@use </span><span class="value">'variables' </span><span class="variable">as *</span>;</p>
+            <p><span class="variable">@use </span><span class="value">'variables' </span><span class="variable">as
+                *</span>;</p>
             <p class="comment">// the 'as *' syntax tells the file</p>
             <p class="comment">// to treat the variables from</p>
             <p class="comment">// variables.scss as global variables</p>
@@ -838,14 +791,8 @@
 
         </div>
       </div>
-      <div 
-        class="col-4 md flex-center"
-        data-aos="fade-left"
-        data-aos-delay="300"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-        data-aos-offset="50"
-      >
+      <div class="col-4 md flex-center" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500"
+        data-aos-easing="ease-in-sine" data-aos-offset="50">
         <div class='codeBlock'>
 
           <div class="navBarDiv">
@@ -876,50 +823,37 @@
 
     </div>
 
-   </div>
+  </div>
   <!-- strcuture page end -->
 
   <!-- variable page start -->
-   <div class="section-a-2 page flex-center">
-    <h3
-      data-aos="zoom-in"
-      data-aos-duration="500"
-      data-aos-easing="ease-in-sine"
-    >
+  <div class="section-a-2 page flex-center">
+    <h3 data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
       $variables
     </h3>
-   </div>
+  </div>
 
-   <div class="section-b-10 flex-col">
-    
+  <div class="section-b-10 flex-col">
+
     <div class="row md">
 
-      <div 
-        class="col-8 md flex-center flex-col" 
-        style="text-align: center;"
-        data-aos="fade-right"
-        data-aos-delay="300"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-8 md flex-center flex-col" style="text-align: center;" data-aos="fade-right" data-aos-delay="300"
+        data-aos-duration="500" data-aos-easing="ease-in-sine">
 
-        <p class="body-text">Its important to note that like a handful of other css feautures variables are not exclusive to sass</p>
+        <p class="body-text">Its important to note that like a handful of other css features variables are not exclusive
+          to sass</p>
         <br>
         <p class="body-text">However sass handles its variables in a different way than css variables alone</p>
         <br>
-        <p class="body-text">Since sass compiles down to css it has the oppurtunity to give variables muteable states before compile time making the variables imperitive rather than declaritive</p>
+        <p class="body-text">Since sass compiles down to css it has the opportunity to give variables mutable states
+          before compile time making the variables imperative rather than declarative</p>
         <br>
         <p class="body-text">The examples below demonstrate this behavior</p>
 
       </div>
 
-      <div 
-        class="col-4 md flex-center"
-        data-aos="fade-left"
-        data-aos-delay="300"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-4 md flex-center" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
 
         <div class='codeBlock'>
 
@@ -960,13 +894,8 @@
 
     <div class="row md">
 
-      <div 
-        class="col-5 md flex-center"
-        data-aos="fade-right"
-        data-aos-delay="300"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-        >
+      <div class="col-5 md flex-center" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
         <div class='codeBlock'>
 
           <div class="navBarDiv">
@@ -1009,13 +938,8 @@
       <div class="col-2 md flex-center">
         <p class="subHeader">-></p>
       </div>
-      <div 
-        class="col-5 md flex-center"
-        data-aos="fade-left"
-        data-aos-delay="300"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-5 md flex-center" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
         <div class='codeBlock'>
 
           <div class="navBarDiv">
@@ -1060,13 +984,14 @@
 
     <div class="row md"></div>
 
-   </div>
+  </div>
   <!-- variable page end -->
 
   <!-- mixins page start -->
   <div class="flex-center section-a-3 page flex-col">
     <h3 data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-sine">Mixins</h3>
-    <p class="subHeader" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-sine">@mixin @include</p>
+    <p class="subHeader" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-sine">
+      @mixin @include</p>
   </div>
 
   <div class="flex-col section-b-9">
@@ -1074,36 +999,29 @@
 
     <div class="row md">
 
-      <div 
-        class="col-12 md flex-col flex-center"
-        data-aos="zoom-in"
-        data-aos-delay="450"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-12 md flex-col flex-center" data-aos="zoom-in" data-aos-delay="450" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
 
-        <p class="body-text">Mixins are reusable blocks of CSS that can be included in other rules. They allow you to define styles that can be reused throughout your stylesheet.</p>
+        <p class="body-text">Mixins are reusable blocks of CSS that can be included in other rules. They allow you to
+          define styles that can be reused throughout your stylesheet.</p>
         <br>
-        <p class="body-text">Mixins can take arguments, making them flexible. You define a mixin with @mixin name($arg) { ... } and include it with @include name(value).</p>
+        <p class="body-text">Mixins can take arguments, making them flexible. You define a mixin with @mixin name($arg)
+          { ... } and include it with @include name(value).</p>
         <br>
-        <p class="body-text">Mixins find the majority of their use being reused as part of your sass documents and creating a more modular structure for your styles</p>
+        <p class="body-text">Mixins find the majority of their use being reused as part of your sass documents and
+          creating a more modular structure for your styles</p>
 
       </div>
 
-      
+
 
 
     </div>
 
     <div class="row md">
 
-      <div 
-        class="col-6 md flex-center"
-        data-aos="fade-right"
-        data-aos-delay="600"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-6 md flex-center" data-aos="fade-right" data-aos-delay="600" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
 
         <div class='codeBlock'>
 
@@ -1117,7 +1035,8 @@
           </div>
 
           <div class="codeBlockBody">
-            <p><span class='variable'>@mixin</span> <span class='function'>flex-center</span>(<span class='variable'>$direction</span>: row) <span class='bracket'>{</span></p>
+            <p><span class='variable'>@mixin</span> <span class='function'>flex-center</span>(<span
+                class='variable'>$direction</span>: row) <span class='bracket'>{</span></p>
             <p class='tab1'><span class='property'>display</span>: flex;</p>
             <p class='tab1'><span class='property'>justify-content</span>: center;</p>
             <p class='tab1'><span class='property'>align-items</span>: center;</p>
@@ -1129,7 +1048,8 @@
             <p><span class='bracket'>}</span></p>
             <p></p>
             <p><span class='selector'>.vertical</span> <span class='bracket'>{</span></p>
-            <p class='tab1'><span class='variable'>@include</span> <span class='function'>flex-center</span>(<span class='value'>column</span>);</p>
+            <p class='tab1'><span class='variable'>@include</span> <span class='function'>flex-center</span>(<span
+                class='value'>column</span>);</p>
             <p><span class='bracket'>}</span></p>
           </div>
 
@@ -1137,13 +1057,8 @@
 
       </div>
 
-      <div 
-        class="col-6 md flex-center"
-        data-aos="fade-left"
-        data-aos-delay="600"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="col-6 md flex-center" data-aos="fade-left" data-aos-delay="600" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
 
         <div class='codeBlock'>
 
@@ -1183,21 +1098,11 @@
   <!-- built-ins page start -->
 
   <div class="flex-center section-a-3 page flex-col">
-    <h3
-      data-aos="zoom-in"
-      data-aos-duration="500"
-      data-aos-easing="ease-in-sine"
-    >
+    <h3 data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
       Built-ins
     </h3>
-    <p 
-      class="subHeader"
-      data-aos="zoom-in"
-      data-aos-delay="300"
-      data-aos-duration="500"
-      data-aos-easing="ease-in-sine"
-    >
-    Sass Functions
+    <p class="subHeader" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-sine">
+      Sass Functions
     </p>
   </div>
 
@@ -1205,11 +1110,14 @@
 
     <div class="row md">
 
-      <div class="col-4 md flex-center" data-aos="fade-up-right" data-aos-delay="400" data-aos-duration="500" data-aos-easing="ease-in-sine">
-        <p class="body-text">The lighten function increases the lightness of a color by a specified percentage, making it appear brighter.</p>
+      <div class="col-4 md flex-center" data-aos="fade-up-right" data-aos-delay="400" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
+        <p class="body-text">The lighten function increases the lightness of a color by a specified percentage, making
+          it appear brighter.</p>
       </div>
 
-      <div class="col-4 md flex-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in-sine">
+      <div class="col-4 md flex-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
         <div class='codeBlock'>
           <div class="navBarDiv">
             <div class="navButtonsDiv">
@@ -1223,16 +1131,19 @@
             <p><span class='variable'>@use</span> <span class='variable'>"sass:color"</span>;</p>
             <p></p>
             <p><span class='variable'>$base-color</span>: #333;</p>
-            <p><span class='variable'>$light-color</span>: <span class='variable'>color.lighten</span>(<span class='variable'>$base-color</span>, <span class='value'>20%</span>);</p>
+            <p><span class='variable'>$light-color</span>: <span class='variable'>color.lighten</span>(<span
+                class='variable'>$base-color</span>, <span class='value'>20%</span>);</p>
             <p></p>
             <p><span class='selector'>.element</span> <span class='bracket'>{</span></p>
-            <p class='tab1'><span class='property'>background-color</span>: <span class='variable'>$light-color</span>;</p>
+            <p class='tab1'><span class='property'>background-color</span>: <span class='variable'>$light-color</span>;
+            </p>
             <p><span class='bracket'>}</span></p>
           </div>
         </div>
       </div>
 
-      <div class="col-4 md flex-center" data-aos="fade-up-left" data-aos-delay="400" data-aos-duration="500" data-aos-easing="ease-in-sine">
+      <div class="col-4 md flex-center" data-aos="fade-up-left" data-aos-delay="400" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
         <div class='codeBlock'>
           <div class="navBarDiv">
             <div class="navButtonsDiv">
@@ -1253,11 +1164,14 @@
     </div>
     <div class="row md">
 
-      <div class="col-4 md flex-center" data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in-sine">
-        <p class="body-text">The mix function blends two colors together based on a weight percentage, creating a new color.</p>
+      <div class="col-4 md flex-center" data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
+        <p class="body-text">The mix function blends two colors together based on a weight percentage, creating a new
+          color.</p>
       </div>
 
-      <div class="col-4 md flex-center" data-aos="fade-up" data-aos-delay="600" data-aos-duration="500" data-aos-easing="ease-in-sine">
+      <div class="col-4 md flex-center" data-aos="fade-up" data-aos-delay="600" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
         <div class='codeBlock'>
           <div class="navBarDiv">
             <div class="navButtonsDiv">
@@ -1272,7 +1186,9 @@
             <p></p>
             <p><span class='variable'>$color1</span>: <span class='value'>red</span>;</p>
             <p><span class='variable'>$color2</span>: <span class='value'>blue</span>;</p>
-            <p><span class='variable'>$mixed-color</span>: <span class='variable'>color.mix</span>(<span class='variable'>$color1</span>, <span class='variable'>$color2</span>, <span class='value'>50%</span>);</p>
+            <p><span class='variable'>$mixed-color</span>: <span class='variable'>color.mix</span>(<span
+                class='variable'>$color1</span>, <span class='variable'>$color2</span>, <span class='value'>50%</span>);
+            </p>
             <p></p>
             <p><span class='selector'>.element</span> <span class='bracket'>{</span></p>
             <p class='tab1'><span class='property'>color</span>: <span class='variable'>$mixed-color</span>;</p>
@@ -1281,7 +1197,8 @@
         </div>
       </div>
 
-      <div class="col-4 md flex-center" data-aos="fade-up-left" data-aos-delay="600" data-aos-duration="500" data-aos-easing="ease-in-sine">
+      <div class="col-4 md flex-center" data-aos="fade-up-left" data-aos-delay="600" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
         <div class='codeBlock'>
           <div class="navBarDiv">
             <div class="navButtonsDiv">
@@ -1302,11 +1219,14 @@
     </div>
     <div class="row md">
 
-      <div class="col-4 md flex-center" data-aos="fade-up-right" data-aos-delay="600" data-aos-duration="500" data-aos-easing="ease-in-sine">
-        <p class="body-text">The round function rounds a number to the nearest integer, useful for precise calculations.</p>
+      <div class="col-4 md flex-center" data-aos="fade-up-right" data-aos-delay="600" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
+        <p class="body-text">The round function rounds a number to the nearest integer, useful for precise calculations.
+        </p>
       </div>
 
-      <div class="col-4 md flex-center" data-aos="fade-up" data-aos-delay="700" data-aos-duration="500" data-aos-easing="ease-in-sine">
+      <div class="col-4 md flex-center" data-aos="fade-up" data-aos-delay="700" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
         <div class='codeBlock'>
           <div class="navBarDiv">
             <div class="navButtonsDiv">
@@ -1320,16 +1240,19 @@
             <p><span class='variable'>@use</span> <span class='variable'>"sass:math"</span>;</p>
             <p></p>
             <p><span class='variable'>$value</span>: <span class='value'>3.7</span>;</p>
-            <p><span class='variable'>$rounded</span>: <span class='variable'>math.round</span>(<span class='variable'>$value</span>);</p>
+            <p><span class='variable'>$rounded</span>: <span class='variable'>math.round</span>(<span
+                class='variable'>$value</span>);</p>
             <p></p>
             <p><span class='selector'>.element</span> <span class='bracket'>{</span></p>
-            <p class='tab1'><span class='property'>width</span>: <span class='variable'>$rounded</span><span class='value'>px</span>;</p>
+            <p class='tab1'><span class='property'>width</span>: <span class='variable'>$rounded</span><span
+                class='value'>px</span>;</p>
             <p><span class='bracket'>}</span></p>
           </div>
         </div>
       </div>
 
-      <div class="col-4 md flex-center" data-aos="fade-up-left" data-aos-delay="600" data-aos-duration="500" data-aos-easing="ease-in-sine">
+      <div class="col-4 md flex-center" data-aos="fade-up-left" data-aos-delay="600" data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
         <div class='codeBlock'>
           <div class="navBarDiv">
             <div class="navButtonsDiv">
@@ -1354,18 +1277,14 @@
 
 
   <header style='height: 100vh' class='hero page'>
-    <img 
-      src='media/sass-pink.svg' 
-      id='sass-logo' 
-      alt='sass-logo' 
-      data-aos='zoom-in' 
-      data-aos-duration='500'
+    <img src='media/sass-pink.svg' class='sass-logo' alt='sass-logo' data-aos='zoom-in' data-aos-duration='500'
       data-aos-easing='ease-in-sine'>
     <h1 class='title' data-aos='zoom-in' data-aos-easing='ease-in-sine' data-aos-delay='350' data-aos-duration='500'>
       SHOWCASE
     </h1>
 
-    <h2 class='subHeader' class='title' data-aos='zoom-in' data-aos-easing='ease-in-sine' data-aos-delay='350' data-aos-duration='500'>
+    <h2 class='subHeader' data-aos='zoom-in' data-aos-easing='ease-in-sine' data-aos-delay='350'
+      data-aos-duration='500'>
       thank you
     </h2>
   </header>
