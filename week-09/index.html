@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Holy Grail Layout with CSS Grid</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    
+    <main>
+        <h2>Content</h2>
+        <div id="content-text">
+            <p>This is the main content area. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="addText('content-text')">Add More Content</button>
+    </main>
+    
+    <aside>
+        <h2>Ad</h2>
+        <div id="ad-text">
+            <p>Advertisement or sidebar content goes here.</p>
+        </div>
+        <button onclick="addText('ad-text')">Add More Ad Content</button>
+    </aside>
+    
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <footer>
+        <p>&copy; 2026 Holy Grail Layout. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function addText(elementId) {
+            const container = document.getElementById(elementId);
+            const loremTexts = [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+                "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores."
+            ];
+            
+            const randomText = loremTexts[Math.floor(Math.random() * loremTexts.length)];
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = randomText;
+            container.appendChild(newParagraph);
+        }
+    </script>
+</body>
+</html>
