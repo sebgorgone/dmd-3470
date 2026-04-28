@@ -1,0 +1,113 @@
+#hero {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#hero header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+  background-color: #7089f7;
+}
+
+#hero header button {
+  padding: 4px 12px 2px 12px;
+  background-color: transparent;
+  border: 1px rgba(100, 100, 100, .4) solid;
+  border-radius: 0.25rem;
+}
+
+#hero header button img {
+  width: 30px;
+  height: 34px;
+}
+
+#hero #dropdown {
+  display: flex;
+  max-height: 0px;
+  background-color: #7089f7;
+  font-size: 16px;
+  color: white;
+  overflow: hidden;
+  flex-direction: column;
+  transition: max-height 350ms ease;
+  padding: 0px 12px;
+}
+
+#hero #dropdown a {
+  padding: 12px 0px;
+}
+
+#hero #dropdown.expanded {
+  max-height: 400px;
+}
+
+#hero header nav {
+  display: none;
+}
+
+#hero #content {
+  background-image: linear-gradient(230deg, #7089F7 0%, #BD32D3 100%);
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+#her #content h1 {
+  font-weight: bold;
+}
+
+#hero #content #hero-svg{
+  position: absolute;
+  top: 0;
+  left: 10%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  padding: 14px;
+}
+
+#hero #content > :not(#hero-svg) {
+  position: relative;
+  z-index: 1;
+}
+ #hero #content #heroImg {
+   width: 45%;
+ }
+ #hero #content h1 span {
+   color: rgb(30, 244, 234);
+   font-weight: bold;
+ }
+
+ #hero #content div {
+   display: flex;
+   gap: 12px;
+   align-self: flex-start;
+ }
+ 
+ #hero #content div button {
+   color: rgb(189, 50, 211);
+   background-color: white;
+   padding: 12px;
+   border-radius: 8px;
+   font-weight: bold;
+ }
+
+
+
+
+
+
+
+

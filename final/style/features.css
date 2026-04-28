@@ -1,0 +1,48 @@
+#features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #102465;
+  padding: 20px;
+}
+
+#features p {
+  color: #656565;
+}
+
+#features h2 {
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+#features .cards {
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+#features .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 21.4px 2.6px;
+  padding: 24px;
+  gap: 12px;
+  border: 0px;
+  transition: border-bottom 100ms ease;
+}
+
+#features .card:hover {
+  border-bottom: solid #BD32D3 3px;
+}
+
+#features .card img {
+  align-self: flex-start;
+  width: 64px;
+  aspect-ratio: 1 / 1;
+}

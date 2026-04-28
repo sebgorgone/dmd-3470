@@ -1,0 +1,52 @@
+.manage-design {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #102465;
+  gap: 12px;
+  text-align: center;
+  align-items: center;
+  margin-top: 96px;
+  padding: 12px;
+}
+
+.manage-design .circle-background {
+  width: 35vw;
+  height: 35vw;
+  overflow: visible;
+  background-color: #ae77cc;
+  border-radius: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 128px;
+}
+
+.manage-design p {
+  color: #656565;
+}
+
+.manage-design h2 {
+  font-weight: bold;
+}
+
+.manage-design .circle-background img {
+  width: 80%;
+  height: auto;
+  object-fit: initial;
+  max-width: none;
+}
+
+.manage-design button {
+  background-color: #BD32D3;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  padding: 18px 40px;
+  border-radius: 10px;
+  transition: background-color 300ms ease;
+}
+
+.manage-design button:hover {
+  background-color: #7089F7;
+}

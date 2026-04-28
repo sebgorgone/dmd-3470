@@ -1,0 +1,42 @@
+#tutorial {
+  background-image: url("../assets/watch-tutorial-img.jpg");
+  width:100%;
+  aspect-ratio: 7 / 4;
+  background-size: cover;
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-direction: column;
+  text-align: center;
+}
+
+#tutorial div {
+  width: 100%;
+  aspect-ratio: 7 / 4;
+  position: absolute;
+  background-color:  #6e3ab6;
+  opacity: 60%;
+  z-index: 1;
+}
+
+#tutorial h2 {
+  font-weight: bold;
+  color: white;
+  font-size: 45px;
+  z-index: 2;
+}
+
+#tutorial a {
+  color: white;
+  font-size: 50px;
+  padding: 10px;
+  padding-bottom: 15px;
+  border: solid rgba(170,170,170,.7) 10px;
+  background-color: #D9378B;
+  border-radius: 50vw;
+  aspect-ratio: 1 / 1;
+  z-index: 2;
+}
+
