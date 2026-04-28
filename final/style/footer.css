@@ -1,0 +1,27 @@
+footer {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 25px;
+  padding: 50px;
+  background-image: linear-gradient(230deg, #7089F7 0%, #BD32D3 100%);
+  margin-top: 60px;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+footer div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+footer img {
+  width: 150px;
+}
