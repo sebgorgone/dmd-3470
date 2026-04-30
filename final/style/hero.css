@@ -49,6 +49,16 @@
 
 #hero header nav {
   display: none;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+}
+
+#hero header nav a {
+  text-decoration: none;
+  color: white;
 }
 
 #hero #content {
@@ -65,7 +75,7 @@
   padding: 24px;
 }
 
-#her #content h1 {
+#hero #content h1 {
   font-weight: bold;
 }
 
@@ -97,7 +107,7 @@
    gap: 12px;
    align-self: flex-start;
  }
- 
+
  #hero #content div button {
    color: rgb(189, 50, 211);
    background-color: white;
@@ -110,8 +120,18 @@
 @media(min-width: 768px) {
 
   #hero header {
-    background-color: none;
+    background-color: transparent;
   }
+
+  #hero header button {
+    display: none;
+  }
+
+  #hero #content {
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+  }
+
 
 }
 
