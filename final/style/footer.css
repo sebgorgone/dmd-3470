@@ -25,3 +25,17 @@ footer div {
 footer img {
   width: 150px;
 }
+
+@media(min-width: 768px) {
+  footer h2 {
+    font-size: 50px;
+  }
+
+  footer img {
+    width: 225px;
+  }
+
+  footer {
+    gap: 64px;
+  }
+}

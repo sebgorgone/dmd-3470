@@ -46,3 +46,17 @@
   width: 64px;
   aspect-ratio: 1 / 1;
 }
+
+@media(min-width: 768px) {
+  #features .cards {
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  #features .card {
+    width: auto;
+    flex: 1;
+    max-width: 350px;
+  }
+}

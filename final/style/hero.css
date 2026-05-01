@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(230deg, #7089F7 0%, #BD32D3 100%);
+  min-height: 100vh;
+  max-height: fit-content;
 }
 
 
@@ -49,7 +51,6 @@
 
 #hero header nav {
   display: none;
-  display: flex;
   gap: 22px;
   align-items: center;
   font-size: 16px;
@@ -63,8 +64,7 @@
 
 #hero #content {
   position: relative;
-  min-height: 100vh;
-  overflow: hidden;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,7 +102,7 @@
    font-weight: bold;
  }
 
- #hero #content div {
+ #hero #content #buttons {
    display: flex;
    gap: 12px;
    align-self: flex-start;
@@ -127,11 +127,23 @@
     display: none;
   }
 
+  #hero header nav {
+    display: flex;
+  }
+
   #hero #content {
     display: grid;
     grid-template: 1fr / repeat(2, 1fr);
   }
 
+  #hero #content img {
+    grid-area: 1 / 2 / 2 / 3;
+    margin: auto;
+  }
+
+  #hero #content #left-col {
+    grid-area: 1 / 1 / 2 / 2;
+  }
 
 }
 

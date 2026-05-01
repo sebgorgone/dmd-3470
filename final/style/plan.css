@@ -48,10 +48,12 @@
 
 #plan .plan-card ul {
   align-self: flex-start;
+  margin: auto;
   margin-top: 16px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
+  width: 80%;
 }
 
 #plan .plan-card .inactive {
@@ -71,4 +73,21 @@
 #plan button:hover {
   background-color: #BD32D3;
   color: white;
+}
+
+@media(min-width: 768px) {
+  #plan .plan-cards {
+    flex-direction: row;
+    max-width: 1200px;
+    gap: 18px;
+  }
+
+  #plan .plan-card {
+    flex: 1;
+    gap: 18px;
+  }
+
+  #plan .plan-card ul {
+    gap: 24px;
+  }
 }
